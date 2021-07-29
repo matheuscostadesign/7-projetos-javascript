@@ -1,5 +1,7 @@
 # Desafio 7 Projetos em 7 Dias
 
+- Edição Javascript
+
 <img src="js.png" width="60">
 
 ## Projetos
