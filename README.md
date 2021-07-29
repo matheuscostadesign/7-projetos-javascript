@@ -1,2 +1,4 @@
 # 7-projetos-javascript
-Projetos Vanilla JS
+
+Desafio 7 Projetos em 7 Dias
+Edição: Javascript
