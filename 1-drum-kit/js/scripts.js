@@ -3,10 +3,9 @@ document.body.addEventListener("keyup", (event) => {
   playSound(event.code.toLocaleLowerCase());
 });
 
-// fazer a composição
+// faz a composição
 document.querySelector(".composer button").addEventListener("click", () => {
   let song = document.querySelector("#input").value;
-
   if (song !== "") {
     // converte string em array
     let songArray = song.split("");
@@ -14,6 +13,7 @@ document.querySelector(".composer button").addEventListener("click", () => {
   }
 });
 
+// função tocar
 function playSound(sound) {
   let audioElement = document.querySelector(`#s_${sound}`);
   let keyElement = document.querySelector(`div[data-key="${sound}"]`);
@@ -33,9 +33,9 @@ function playSound(sound) {
   }
 }
 
+// função composição
 function playComposition(songArray) {
   let wait = 0;
-
   for (let songItem of songArray) {
     setTimeout(() => {
       playSound(`key${songItem}`);
