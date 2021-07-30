@@ -47,16 +47,15 @@ function playComposition(songArray) {
 // Funções on-click
 
 // Play Q
-var q = document.getElementById("s_keyq");
 function playQ() {
+  var q = document.getElementById("s_keyq");
   q.currentTime = 0;
   q.play();
 }
 
 // Play W
-var w = document.getElementById("s_keyw");
-qqq;
 function playW() {
+  var w = document.getElementById("s_keyw");
   w.currentTime = 0;
   w.play();
 }

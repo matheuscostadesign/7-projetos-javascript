@@ -35,6 +35,13 @@ h1 {
   gap: 10px;
 }
 
+.disable-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .key {
   width: 80px;
   height: 80px;
