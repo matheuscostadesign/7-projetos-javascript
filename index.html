@@ -1,54 +1,49 @@
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt">
 
 <head>
-  <meta charset="utf-8">
-  <title>Projetos Vanilla Javascript</title>
-  <link rel="shortcut icon" href="js.png" type="image/x-icon">
-  <style>
-    body {
-      background-color: #0D1117;
-      font-family: sans-serif;
-      color: #fff;
-      width: 100%;
-      height: 100vh;
-      margin: 0;
-      padding: 0;
-      display: grid;
-      place-items: center;
-    }
-
-    .center {
-      text-align: center;
-      width: 100%;
-      margin: 0 auto;
-    }
-
-    ul {
-      list-style: none;
-    }
-
-    a {
-      color: slategrey;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: aqua;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drumkit</title>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
+    <h1>Drumkit</h1>
 
-  <div class="center">
-    <img src="js.png" width="80">
-    <h1>Desafio 7 Projetos em 7 Dias</h1>
-    <ul>
-      <li><a href="https://desafios-js.netlify.app/1-drum-kit/index.html" target="_blank">Projeto 1: Drum-kit</a></li>
-    </ul>
-  </div>
+    <div class="keys">
+        <div data-key="keyq" class="key" onclick="playQ()">Q</div>
+        <div data-key="keyw" class="key" onclick="playW()">W</div>
+        <div data-key="keye" class="key" onclick="playE()">E</div>
 
+        <div data-key="keya" class="key" onclick="playA()">A</div>
+        <div data-key="keys" class="key" onclick="playS()">S</div>
+        <div data-key="keyd" class="key" onclick="playD()">D</div>
+
+        <div data-key="keyz" class="key" onclick="playZ()">Z</div>
+        <div data-key="keyx" class="key" onclick="playX()">X</div>
+        <div data-key="keyc" class="key" onclick="playC()">C</div>
+    </div>
+
+    <div class="composer">
+        <input type="text" id="input" placeholder="Faça uma composição..." />
+        <button>Tocar</button>
+    </div>
+
+    <footer>Drumkit Sampler</footer>
+
+    <audio id="s_keyq" src="sounds/keyq.wav"></audio>
+    <audio id="s_keyw" src="sounds/keyw.wav"></audio>
+    <audio id="s_keye" src="sounds/keye.wav"></audio>
+    <audio id="s_keya" src="sounds/keya.wav"></audio>
+    <audio id="s_keys" src="sounds/keys.wav"></audio>
+    <audio id="s_keyd" src="sounds/keyd.wav"></audio>
+    <audio id="s_keyz" src="sounds/keyz.wav"></audio>
+    <audio id="s_keyx" src="sounds/keyx.wav"></audio>
+    <audio id="s_keyc" src="sounds/keyc.wav"></audio>
+
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
