@@ -4,13 +4,23 @@
   box-sizing: border-box;
 }
 
+:root {
+  --body-color-primary: #0d1117;
+  --body-color-secondary: #161b22;
+  --body-color-terciary: #21262d;
+  --color-primary: #47a6ff;
+  --color-secondary: #f1e05a;
+  --color-terciary: #e34c26;
+  --color-quartiary: #563d7c;
+}
+
 body {
   display: flex;
   min-height: 100vh;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #333;
+  background-color: #0d1117;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -39,13 +49,13 @@ h1 {
 }
 
 .key:hover {
-  border: 2px solid #ff0;
-  color: #ff0;
+  border: 2px solid var(--color-secondary);
+  color: var(--color-secondary);
 }
 
 .key.active {
-  border: 2px solid #ff0;
-  color: #ff0;
+  border: 2px solid var(--color-secondary);
+  color: var(--color-secondary);
 }
 
 .composer {
