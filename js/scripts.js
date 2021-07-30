@@ -55,6 +55,7 @@ function playQ() {
 
 // Play W
 var w = document.getElementById("s_keyw");
+qqq;
 function playW() {
   w.currentTime = 0;
   w.play();
